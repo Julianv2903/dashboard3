@@ -1,18 +1,12 @@
-import "./globals.css";
-
-
 export const metadata = {
   title: "Apple Music Clone",
-  description: "Replica inspirada, solo educativa"
+  description: "Clon Apple Music con Next.js y Supabase",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="es">
-      <body className="min-h-screen bg-white text-black">
-        <NavBar />
-        <main className="p-6">{children}</main>
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
